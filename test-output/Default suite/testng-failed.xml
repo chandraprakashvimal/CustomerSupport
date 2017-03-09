@@ -5,7 +5,7 @@
     <classes>
       <class name="com.Tapzo.CustomerSupport.Testscript">
         <methods>
-          <include name="RechargePending"/>
+          <include name="CheckRefund"/>
         </methods>
       </class> <!-- com.Tapzo.CustomerSupport.Testscript -->
     </classes>

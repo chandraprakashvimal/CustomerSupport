@@ -2,29 +2,29 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46725" started-at="2017-02-24T11:26:04Z" finished-at="2017-02-24T11:26:50Z">
+  <suite name="Default suite" duration-ms="7807" started-at="2017-03-08T11:17:31Z" finished-at="2017-03-08T11:17:39Z">
     <groups>
       <group name="Recharge">
-        <method signature="Testscript.RechargePending()[pri:0, instance:com.Tapzo.CustomerSupport.Testscript@6d026701]" name="RechargePending" class="com.Tapzo.CustomerSupport.Testscript"/>
+        <method signature="Testscript.CheckRefund()[pri:0, instance:com.Tapzo.CustomerSupport.Testscript@6ab7a896]" name="CheckRefund" class="com.Tapzo.CustomerSupport.Testscript"/>
       </group> <!-- Recharge -->
     </groups>
-    <test name="Default test" duration-ms="46725" started-at="2017-02-24T11:26:04Z" finished-at="2017-02-24T11:26:50Z">
+    <test name="Default test" duration-ms="7807" started-at="2017-03-08T11:17:31Z" finished-at="2017-03-08T11:17:39Z">
       <class name="com.Tapzo.CustomerSupport.Testscript">
-        <test-method status="FAIL" signature="RechargePending()[pri:0, instance:com.Tapzo.CustomerSupport.Testscript@6d026701]" name="RechargePending" duration-ms="46698" started-at="2017-02-24T16:56:04Z" finished-at="2017-02-24T16:56:50Z">
+        <test-method status="FAIL" signature="CheckRefund()[pri:0, instance:com.Tapzo.CustomerSupport.Testscript@6ab7a896]" name="CheckRefund" duration-ms="7785" started-at="2017-03-08T16:47:31Z" finished-at="2017-03-08T16:47:39Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Answer is wrong(Answer id=67) and 
- answer=Your recharge transaction is delayed due to a technical problem on the operator side.  expected [64] but found [67]]]>
+              <![CDATA[order_id: 28387588 Answer is wrong(Answer id=28) and 
+ answer=Your amount has been refunded to Tapzo wallet. expected [46] but found [28]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Answer is wrong(Answer id=67) and 
- answer=Your recharge transaction is delayed due to a technical problem on the operator side.  expected [64] but found [67]
+              <![CDATA[java.lang.AssertionError: order_id: 28387588 Answer is wrong(Answer id=28) and 
+ answer=Your amount has been refunded to Tapzo wallet. expected [46] but found [28]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:370)
-	at Utility.Utilities.validateAnswer(Utilities.java:87)
-	at com.Tapzo.CustomerSupport.Testscript.RechargePending(Testscript.java:58)
+	at Utility.Utilities.validateAnswer(Utilities.java:90)
+	at com.Tapzo.CustomerSupport.Testscript.CheckRefund(Testscript.java:1015)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,7 +54,7 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RechargePending -->
+        </test-method> <!-- CheckRefund -->
       </class> <!-- com.Tapzo.CustomerSupport.Testscript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
